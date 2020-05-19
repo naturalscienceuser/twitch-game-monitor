@@ -10,7 +10,7 @@ token = os.getenv("DISCORD_TOKEN")
 twitch_client_id = os.getenv("TWITCH_CLIENT_ID")
 twitch_client_secret = os.getenv("TWITCH_CLIENT_SECRET")
 oauth_token = os.getenv("OAUTH_TOKEN")
-channel_id = os.getenv("CHANNEL_ID")
+channel_id = int(os.getenv("CHANNEL_ID"))
 game_id = os.getenv("GAME_ID")
 client = discord.Client()
 stream_search_url = f"https://api.twitch.tv/helix/streams?game_id={game_id}"
